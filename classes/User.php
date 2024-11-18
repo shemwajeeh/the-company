@@ -8,8 +8,8 @@ class User extends Database {
         // Extract form data from the $request array
         $first_name = $request['first_name'];
         $last_name = $request['last_name'];
-        $username = $request['username'];
-        $password = $request['password'];
+        // $username = $request['username'];
+        // $password = $request['password'];
 
         // Securely hash the password before storing it
         $password = password_hash($password, PASSWORD_DEFAULT);
